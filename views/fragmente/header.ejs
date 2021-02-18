@@ -1,0 +1,36 @@
+<header>
+		<nav class="menubar">
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn"><i class="fa fa-angle-double-down"></i></label>
+			<label class="logo">NDR Make Up</label>
+			<ul class="menu">
+				<li class="element"><a href="/index">Acasă</a></li>
+				<li class="element"><a href="/info">Informații utile</a>
+				</li>
+				<li class="element"><a href="/produse">Produse</a></li>
+				<li class="element"><a href="/promo">Promoții</a></li>
+			</ul>
+		</nav>
+		<br>
+		<div class="button-wrap">
+		<button type="button" onclick="location.href = '/inregistrare';" class="inreg"> Inregistrare </button>
+		</div>
+		<div>
+		<form id="login" method="post" action="/login">
+		<% if(!locals.username) {  %>
+        <form action="/login" method="post" >
+            <label>
+                <input type="text" name="username" value="" class="type" placeholder="username">
+            </label>
+            <label>
+                <input type="password" name="parola" value="" class="type" placeholder="parola">
+            </label>
+			<input type="submit" value="Log In" class="inreg">
+        </form>
+		</div>
+		<% }
+	else { %>
+	Utilizator logat: <%= locals.username  %>
+	<a href="/logout">Logout</a>
+	<% } %>
+</header>

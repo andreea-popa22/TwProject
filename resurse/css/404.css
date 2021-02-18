@@ -1,0 +1,35 @@
+*{
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+	}
+	
+	html{
+		font-size: 18px;
+	}
+	
+	main{
+		padding-left:10%;
+		padding-right:10%;
+		padding-top:50px;
+	}
+	
+	body{
+		background-image: url(../images/clouds.jpeg);
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	
+	.center{
+		text-align: center;
+	}
+	
+	.err{
+		padding-left: 18%;
+	}
+	
+	p{
+		color: #e77e98;
+		font-size: 48px;
+
+	}

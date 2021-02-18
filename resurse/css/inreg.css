@@ -1,0 +1,72 @@
+*{
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+	}
+body{
+		background-image: url(../images/clouds.jpeg);
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+.center{
+		text-align: center;
+	}
+
+
+
+.c1{
+	padding-left: 35%;
+}
+
+.type {
+		padding: 5px;
+		border: 2px solid #eee;
+		border-radius:10px;
+	}
+	
+	.type:hover{
+		box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+	}
+	
+	.type1 {
+		padding: 15px;
+		border: 2px solid #eee;
+		border-radius:20px;
+		width:35%;
+		font-size: 18px;
+	}
+	
+	.type1:hover{
+		box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+	}
+	
+	.ll{
+		padding-left:35%;
+	}
+	
+	.brand{
+		padding-left: 45%;
+		font-size: 22px;
+		color: #808080;
+	}
+	
+	.l{
+		padding-left: 35%;
+		font-size: 17px;
+		color: #808080;
+	}
+	
+	.l1{
+		color: #808080;
+	}
+	
+	.submit{
+		padding-left:45%;
+		size: 22px;
+	}
+	
+	.button-wrap1{
+		float:left;
+		padding-left:49%;
+	}

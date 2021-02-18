@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/stil.css">
+	<link rel="stylesheet" href="../CSS/inreg.css">
+    <title>Document</title>
+</head>
+<body>
+<main>
+	<header>
+		<%- include("../fragmente/header") %>
+	</header>
+	<br><br>
+	<div>
+	<% if(!locals.rsstatus) { %>
+    <form action="/inreg" method="post" class="date">
+        <label class="ll">
+            <input type="text" name="nume" value="" placeholder="Nume" class="type1">
+        </label>
+		<br><br>
+		<label class="ll"> 
+			<input type="text" name="username" value="" placeholder="username" class="type1">
+		</label>
+		<br><br>
+        <label class="ll">
+            <input type="password" name="parola" value="" placeholder="Parola" class="type1">
+        </label>
+		<br><br>
+		<label class="ll">
+			<input type="password" name="rparola" value="" placeholder="Reintroduceti parola" class="type1">
+		</label>
+		<br><br>
+		<label class="ll">
+			<input type="email" name="email" value="" placeholder="Email" class="type1">
+		</label>
+		<br><br>
+        <label class="ll">
+			<input type="tel" name="tel" placeholder="Numar de telefon" pattern="[0-9]{10}" required class="type1">
+		</label>
+		<br><br>
+        <label class="ll">
+            <input type="text" name="adresa" value="" placeholder="Adresa" class="type1">
+        </label>
+		<br><br>
+        <label class="ll">
+            <input type="date" name="data" value"" class="type1">
+        </label>
+		<br><br>
+        <p class="brand">Brandul preferat de make up:</p><br>
+            <label class="l">
+                <span>
+                Huda Beauty
+                <input type="checkbox" value="Huda Beauty" name="brand">
+                </span>
+            </label>
+            <label class="l1">
+                <span>
+                Kat von D
+                <input type="checkbox" value="Kat von D" name="brand">
+                </span>
+            </label>
+            <label class="l1">
+                <span>
+                Juvia's Place
+                <input type="checkbox" value="Juvia's Place" name="brand">
+                </span>
+            </label>
+            <label class="l1">
+                <span>
+                Too Faced
+                <input type="checkbox" value="Too Faced" name="brand">
+                </span>
+            </label>
+            <label class="l1">
+                <span>
+                Mac
+                <input type="checkbox" value="Mac" name="brand">
+                </span>
+            </label>
+			<label class="l1">
+                <span>
+                Fenty Beauty
+                <input type="checkbox" value="Fenty Beauty" name="brand">
+                </span>
+            </label>
+			<br><br>
+            <div class="button-wrap1">		
+			<input type="submit" value="Submit" class="inreg">
+			</div>
+    </form>
+	<% } else if(rsstatus=="ok"){ %>
+		<p>Date introduse</p>
+	<% } else {%>
+		<p>Eroare</p>
+	<% } %>
+	</div>
+	<br><br><br>
+</main>
+
+<footer>
+    <%- include ("../fragmente/footer") %>
+</footer>
+</body>
+</html>

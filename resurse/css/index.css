@@ -1,0 +1,207 @@
+	*{
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+	}
+	
+	html{
+		font-size: 18px;
+	}
+	
+	main{
+		padding-left:10%;
+		padding-right:10%;
+		padding-top:50px;
+	}
+	
+	body{
+		background-image: url(../images/clouds.jpeg);
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	
+	.img-wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#img1{
+		width: 250px;
+		height: 250px;
+	}
+	
+	#img1:hover{
+		width: 300px;
+		height: 300px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	article{
+		width: 90%;
+		margin-left: 50px;
+	}
+	
+	article,figcaption{
+		line-height: 1.6rem;
+		font-size: 19px;
+		color: crimson;
+	}
+	
+	.gallery-wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.gallery{
+		width: 200px;
+		height: 200px;
+		border: 5px solid white;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 2rem;
+	}
+	
+	.gallery figure{
+		position: relative;
+		width: 200px;
+		height: 200px
+	}
+	
+	#galerie figure{
+		position: absolute;
+		left: 0;
+		top: 0;
+		animation-name: gal_foto;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-duration: 28s;
+		transform: scale(1,1);
+		transform-origin: 0px center;
+	}
+	
+	#galerie figure:nth-of-type(7){
+		animation-delay: 0s;
+	}
+	
+	#galerie figure:nth-of-type(6){
+		animation-delay: 4s;
+	}
+	
+	#galerie figure:nth-of-type(5){
+		animation-delay: 8s;
+	}
+	
+	#galerie figure:nth-of-type(4){
+		animation-delay: 12s;
+	}
+	
+	#galerie figure:nth-of-type(3){
+		animation-delay: 16s;
+	}
+	
+	#galerie figure:nth-of-type(2){
+		animation-delay: 20s;
+	}
+	
+	#galerie figure:nth-of-type(1){
+		animation-delay: 24s;
+	}
+	
+	@keyframes gal_foto{ 
+		0% {z-index:10;opacity:1;} /*perioada 0-5% in care se afiseaza fara efect */
+		5% {opacity:1;transform:skewX(0deg);}
+		13%{opacity:1;transform:skewX(85deg)} /* de  aici doresc sa descresc si opacitatea;*/
+		14.28%{z-index:10;opacity:0;transform:skewX(90deg);}
+		14.281%{z-index:-1;}/* il ascund cat mai in spate sa nu vina peste imaginile care erau mai sus in html decat el*/
+		85.71999999%{opacity:1;transform:skewX(0deg);z-index:-1;}	
+		85.72%{z-index:0;}/*setez z-index la 0 ca sa revina la ordinea normala de afisare*/
+		100%{opacity:1;z-index:0;}
+	}
+		
+	.center{
+		text-align: center;
+	}
+	
+	a.link{
+		line-height: 1.3rem;
+		font-size: 16px;
+		margin-left: 45%;
+	}
+	
+	p{
+		line-height: 1.6rem;
+		font-family: "Times New Roman", Times, serif;
+
+	}
+	
+	.wrapper{
+		margin: 0 auto;
+		width: 50%;
+	}
+	
+	.videowrapper{
+		position: relative;
+		padding-bottom: 56.35%;
+		padding-top: 25px;
+		height: 0px;
+	}
+	
+	.videowrapper iframe{
+		position: absolute;
+		right: 0px;
+		left: 0px;
+		top: 0px;
+		bottom: 0px;
+		height: 100%;
+		width: 100%;
+	}
+
+
+	@media screen and (min-width:500px) and (max-width:730px){
+		html{
+			font-size: 14px;
+		}		
+	}
+	
+	@media screen and (max-width:500px){
+		html{
+			font-size: 10px;
+		}
+		
+		article{
+			display: block;
+			width: 90%;
+			font-size: 1.5rem;
+			line-height: 1.6rem;
+		}
+		
+		a.link{
+			font-size: 1rem;
+		}
+		
+		#img1{
+			width: 150px;
+			height: 150px;
+		}
+		
+		#img1:hover{
+			width: 230px;
+			height: 230px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		table, article{
+			padding-left: 2rem;
+			padding-right: 2rem;
+			margin: 0 0 0 0;
+			width: 90%;
+		}
+		
+		article{
+			line-height: 2rem;
+			font-size: 1.5rem;
+		}
+	}
+

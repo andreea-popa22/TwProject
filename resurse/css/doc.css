@@ -1,0 +1,49 @@
+	*{
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+	}
+	
+	main{
+		padding-left:10%;
+		padding-right:10%;
+		padding-top:50px;
+	}
+	
+	body{
+		background-image: url(../images/clouds.jpeg);
+		background-size: cover;
+		background-attachment: fixed;
+		font-family: Arial;
+	}
+	
+	.center{
+		text-align: center;
+	}
+	
+	h1{
+		padding-top: 20px;
+		padding-bottom:20px;
+	}
+	
+	section{
+		padding-top: 30px;
+		padding-bottom: 20px;
+		line-height: 1.6;
+		font-size: 17px;
+	}
+	
+	nav ul{
+		padding-left: 20px;
+	}
+	
+	#link{
+		padding-left: 45%;
+	}
+	
+	.afis{
+		border:2px solid #f0adbe;
+		padding:0.7em;
+	}
+
+

@@ -1,0 +1,99 @@
+	*{
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+	}
+	
+	main{
+		padding-left:10%;
+		padding-right:10%;
+		padding-top:50px;
+	}
+	
+	html{
+		font-size: 18px;
+	}
+	
+	body{
+		background-image: url(../images/clouds.jpeg);
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	
+	.center{
+		text-align: center;
+	}
+	
+	s{
+		color:red;
+	}
+	
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		padding: 10px;
+		width: 90%;
+		
+	}
+	.grid-item {
+		padding: 20px;
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	.center{
+		text-align: center;
+	}
+	
+	figure:hover{
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	aside{
+		font-size: 19px;
+	}
+	
+	aside:hover{
+		text-shadow: 2px 2px 4px #87816d;
+	}
+	
+	@media screen and (min-width:510px) and (max-width:730px){
+		html{
+			font-size: 14px;
+		}
+		
+		.grid-container{
+			grid-template-columns: auto auto;
+			grid-gap: 0.71rem;
+			padding: 1.42rem;
+		}
+	}
+	
+	@media screen and (max-width:509px){
+		html{
+			font-size: 10px;
+		}
+		
+		.grid-container{
+			grid-template-columns: auto;
+			grid-gap: 0.71rem;
+			padding: 1.42rem;
+		}
+		
+		aside{
+			font-size:1.5rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+				
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

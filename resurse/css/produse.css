@@ -1,0 +1,104 @@
+	*{
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+	}
+	
+	html{
+		font-size: 18px;
+	}
+	
+	main{
+		padding-left:10%;
+		padding-right:10%;
+		padding-top:50px;
+	}
+	
+	body{
+		background-image: url(../images/clouds.jpeg);
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	
+	.center{
+		text-align: center;
+	}
+	
+	s{
+		color:red;
+	}
+	
+	.list{
+		padding-left: 60px;
+		font-size: 20px;
+		line-height: 1.3;
+		padding-top: 20px;
+	}
+	
+	.list nav ul li ol{
+		padding-left: 20px;
+	}
+		
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		padding: 10px;
+		width:90%;
+	}
+	
+	.grid-item {
+		padding: 20px;
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	h2,h3{
+		text-align:center;
+	}
+	
+	figure:hover{
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	#start{
+		padding-left:45%;
+		background: none;
+	}
+		
+	@media screen and (min-width:510px) and (max-width:730px){
+		html{
+			font-size: 14px;
+		}
+		
+		.grid-container{
+			grid-template-columns: auto auto;
+			grid-gap: 0.71rem;
+			padding: 1.42rem;
+		}
+		
+		#start{
+			padding-left:3.57rem;
+			padding-right:0.35rem;
+		}
+		
+	}
+	
+	@media screen and (max-width:509px){
+		html{
+			font-size: 10px;
+		}
+		.grid-container{
+			grid-template-columns: auto;
+			grid-gap: 0.71rem;
+			padding: 1.42rem;
+		}
+	
+
+		.grid-container > div {
+			padding: 1.42rem 0;
+			font-size: 1.42rem;
+			line-height: 1.6;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+	}

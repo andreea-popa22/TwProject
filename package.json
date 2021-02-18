@@ -1,0 +1,31 @@
+{
+  "name": "proiect-tw",
+  "version": "1.0.0",
+  "description": "site proiect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreea-popa22/TwProject.git"
+  },
+  "keywords": [
+    "machiaj",
+    "ndr",
+    "frumusete",
+    "cosmetice"
+  ],
+  "author": "Popa Iulia Andreea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreea-popa22/TwProject/issues"
+  },
+  "homepage": "https://github.com/andreea-popa22/TwProject#readme",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2"
+  }
+}
